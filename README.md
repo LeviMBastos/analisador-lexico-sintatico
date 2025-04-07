@@ -1,6 +1,6 @@
-# 📘 Analisador Léxico e Sintático - Gramática 13 (Arrays)
+# 📘 Analisador Léxico e Sintático
 
-Este projeto implementa um analisador léxico e sintático para a **Gramática 13**, que lida com expressões envolvendo identificadores, parênteses, operadores aritméticos e operadores de acesso a arrays.
+Este projeto implementa um analisador léxico e sintático, que lida com expressões envolvendo identificadores, parênteses, operadores aritméticos e operadores de acesso a arrays.
 
 ---
 
@@ -35,11 +35,11 @@ Essa gramática aceita expressões como:
 
 ### FOLLOW
 
-| Não-Terminal | FOLLOW                |
-|--------------|------------------------|
-| E            | { ], ), FIM }          |
-| T            | { +, ], ), FIM }       |
-| F            | { *, /, +, ], ), FIM } |
+| Não-Terminal | FOLLOW           |
+|--------------|------------------|
+| E            | { ], )}          |
+| T            | { +, ], )}       |
+| F            | { *, /, +, ], )} |
 
 ---
 
@@ -51,18 +51,6 @@ A implementação está na linguagem Java e composta por:
 - **Analisador Sintático:** baseado em descida recursiva, analisa os tokens com base na gramática fornecida.
 - **Árvore Sintática:** gerada com indentação para facilitar visualização.
 - **Mensagens de Erro Descritivas:** explicações claras para erros sintáticos e léxicos.
-
-### Estrutura do Código
-
-```
-Analisadores.java
-├── enum TipoToken          // Tipos de tokens da linguagem
-├── class Token             // Representação de um token
-├── class NoSintatico       // Nó da árvore sintática
-├── class AnalisadorSintatico // Parser por descida recursiva
-├── class ErroSintatico     // Exceções de sintaxe
-└── analisarLexicamente()   // Função que realiza a análise léxica
-```
 
 ---
 
