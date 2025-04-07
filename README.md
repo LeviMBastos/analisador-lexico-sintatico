@@ -103,5 +103,5 @@ A implementação está na linguagem Java e composta por:
 
 ## 👤 Autores
 
-Levi Bastos
-Gabriel Alves
+- Levi Bastos  
+- Gabriel Alves
