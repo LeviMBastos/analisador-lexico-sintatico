@@ -1,0 +1,6 @@
+com\mycompany\analisadores\Analisadores$ErroSintatico.class
+com\mycompany\analisadores\Analisadores$TipoToken.class
+com\mycompany\analisadores\Analisadores$AnalisadorSintatico.class
+com\mycompany\analisadores\Analisadores$NoSintatico.class
+com\mycompany\analisadores\Analisadores$Token.class
+com\mycompany\analisadores\Analisadores.class
